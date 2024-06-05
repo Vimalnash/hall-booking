@@ -218,7 +218,7 @@ app.get("/rooms/bookeddata", (req, res) => {
 
 // 4. List All Customer with Booked Data
 // CustomerName, RoomName, Date, StartTime, EndTime
-app.get("/customers/bookdeddata", (req, res) => {
+app.get("/customers/bookeddata", (req, res) => {
     try {
         let customerStatus = [];
         customerDetails.map(customerdata => {
