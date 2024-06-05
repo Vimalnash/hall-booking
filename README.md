@@ -8,7 +8,8 @@ Github Repository URL
 
 GET- RoomsList
 
-    API URL     => http://localhost:8080/roomslist
+    API Local URL     => http://localhost:8080/roomslist
+    API Render URL     => https://hall-booking-f831.onrender.com/roomslist
 
     On Success  => Will fetch all the rooms list of Master data
 
@@ -25,6 +26,7 @@ POST Request
 
     API URL     => http://localhost:8080/createroom/:seatCapacity/:amenities/:pricePerHour
                 => Give amenities in comma separated without spaces.
+    API Render URL     => https://hall-booking-f831.onrender.com/createroom/:seatCapacity/:amenities/:pricePerHour
 
     On Success  => Will Create a New HallRoom with the mentioned datas
 
@@ -40,6 +42,7 @@ POST Request
     Input Format    => http://localhost:8080/createRoomBooking/1/2024-05-25/20:24/21:00/1
 
     API URL         => http://localhost:8080/createRoomBooking/:customerId/:date/:startTime/:endTime/:roomId
+    API Render URL     => https://hall-booking-f831.onrender.com/createRoomBooking/:customerId/:date/:startTime/:endTime/
 
     Date => Format      => yyyy-mm-dd => 2024-05-25, Should be today or Future Date only
 
@@ -62,6 +65,7 @@ POST Request
 GET Request
 
     API URL     => http://localhost:8080/rooms/bookeddata
+    API Render URL     => https://hall-booking-f831.onrender.com/rooms/bookeddata
 
     On Success  => Will fetch all the rooms list with their booked details
 
@@ -73,6 +77,7 @@ GET Request
 GET Request
 
     API URL     => http://localhost:8080/customers/bookeddata
+    API Render URL     => https://hall-booking-f831.onrender.com/customers/bookeddata
 
     On Success  => Will fetch all the Customers list with their booked details
 
@@ -88,6 +93,7 @@ GET Request
 
     API URL     => http://localhost:8080/customerhistory/customerId
                 => replace customerId with the available customer list -> Check index.js for customerDetails
+    API Render URL     => https://hall-booking-f831.onrender.com/customerhistory/customerId
 
     On Success  => Will fetch all the rooms list with their booked details for the particular customer id mentioned in the URL
 
